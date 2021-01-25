@@ -64,33 +64,32 @@ class _BarcodeScanScreenState extends State<BarcodeScanScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        home: Scaffold(
-            appBar: AppBar(
-              centerTitle: true,
-              title: Text("Scan Vaccine Barcode"),
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.vertical(
-                  bottom: Radius.circular(30),
-                ),
-              ),
+    return Scaffold(
+        appBar: AppBar(
+          centerTitle: true,
+          title: Text("Scan Vaccine Barcode"),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.vertical(
+              bottom: Radius.circular(30),
             ),
-            body: Builder(builder: (BuildContext context) {
-              return Container(
-                  alignment: Alignment.center,
-                  child: Flex(
-                      direction: Axis.vertical,
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: <Widget>[
-                        RaisedButton(
-                            onPressed: () => scanBarcodeNormal(),
-                            child: Text("Start barcode scan")),
-                        RaisedButton(
-                            onPressed: () => scanQR(),
-                            child: Text("Start QR scan")),
-                        Text('Scan result : $_scanBarcode\n',
-                            style: TextStyle(fontSize: 20))
-                      ]));
-            })));
+          ),
+        ),
+        body: Builder(builder: (BuildContext context) {
+          return Container(
+              alignment: Alignment.center,
+              child: Flex(
+                  direction: Axis.vertical,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    RaisedButton(
+                        onPressed: () => scanBarcodeNormal(),
+                        child: Text("Start barcode scan")),
+                    RaisedButton(
+                        onPressed: () => scanQR(),
+                        child: Text("Start QR scan")),
+                    Text('Scan result : $_scanBarcode\n',
+                        style: TextStyle(fontSize: 20))
+                  ]));
+        }));
   }
 }

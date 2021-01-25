@@ -63,8 +63,8 @@ class App extends StatelessWidget {
       child: MaterialApp(
         navigatorKey: _navigatorKey,
         theme: ThemeData(
-          primaryColor: Color(0xFF473F97),
-          accentColor: Color(0xFFa37eba),
+          primaryColor: Color(0xFF142446),
+          accentColor: Color(0xFF57cc64),
           textTheme: GoogleFonts.montserratTextTheme(
             Theme.of(context).textTheme,
           ),
