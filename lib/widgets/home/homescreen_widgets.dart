@@ -5,9 +5,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:percent_indicator/circular_percent_indicator.dart';
-import 'package:provider/provider.dart';
 import 'package:provider/provider.dart';
 
 import '../../state_models/user_details_data.dart';
@@ -72,6 +70,7 @@ class SusceptibilityPercent extends StatelessWidget {
             Expanded(
               child: Column(
                 children: [
+                  /* Removed on team request
                   Icon(
                     FontAwesomeIcons.stethoscope,
                     color: Colors.blueGrey,
@@ -79,7 +78,7 @@ class SusceptibilityPercent extends StatelessWidget {
                   ),
                   SizedBox(
                     height: 20,
-                  ),
+                  ),*/
                   Text(
                     "It seems you are at ${percent < 0.5 ? "low" : "high"} risk!",
                     style: TextStyle(fontSize: 18),
@@ -169,6 +168,7 @@ class RankAndDays extends StatelessWidget {
                     ),
                   ),
                 ),
+                /* Removed on team request
                 VerticalDivider(
                   color: Colors.grey,
                   thickness: 1,
@@ -195,7 +195,7 @@ class RankAndDays extends StatelessWidget {
                       ),
                     ),
                   ),
-                ),
+                ),*/
               ],
             ),
           ),

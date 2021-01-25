@@ -8,7 +8,6 @@ import './something/dontopen.dart';
 import '../state_models/user_details_data.dart';
 import '../widgets/home/home_cases.dart';
 import '../widgets/home/homescreen_widgets.dart';
-import '../widgets/home/tips.dart';
 
 class HomeScreen extends StatefulWidget {
   static const routeName = '/home-screen';
@@ -62,7 +61,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
             RankAndDays(),
-            Tips(),
+            // Tips(), // Remove Interactive Tips Carousel
             GestureDetector(
               onTap: () =>
                   Navigator.of(context).pushNamed(CovidDetailsPage.routeName),

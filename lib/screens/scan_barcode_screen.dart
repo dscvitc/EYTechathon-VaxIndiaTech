@@ -81,14 +81,58 @@ class _BarcodeScanScreenState extends State<BarcodeScanScreen> {
                   direction: Axis.vertical,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
-                    RaisedButton(
-                        onPressed: () => scanBarcodeNormal(),
-                        child: Text("Start barcode scan")),
-                    RaisedButton(
-                        onPressed: () => scanQR(),
-                        child: Text("Start QR scan")),
-                    Text('Scan result : $_scanBarcode\n',
-                        style: TextStyle(fontSize: 20))
+                    Padding(
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 8, vertical: 2),
+                      child: Card(
+                        elevation: 3,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.only(
+                            topLeft: Radius.circular(15),
+                            topRight: Radius.circular(60),
+                            bottomRight: Radius.circular(15),
+                            bottomLeft: Radius.circular(60),
+                          ),
+                        ),
+                        child: Padding(
+                          padding: const EdgeInsets.all(28.0),
+                          child: Flex(
+                            direction: Axis.vertical,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: <Widget>[
+                              RaisedButton(
+                                  onPressed: () => scanBarcodeNormal(),
+                                  child: Text("Start Barcode scan")),
+                              RaisedButton(
+                                  onPressed: () => scanQR(),
+                                  child: Text("Start QR scan")),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 8, vertical: 1),
+                      child: Card(
+                        elevation: 3,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.only(
+                            topLeft: Radius.circular(15),
+                            topRight: Radius.circular(60),
+                            bottomRight: Radius.circular(15),
+                            bottomLeft: Radius.circular(60),
+                          ),
+                        ),
+                        child: Padding(
+                          padding: const EdgeInsets.all(28.0),
+                          child: Text(
+                            'Scan result : $_scanBarcode\n',
+                            style: TextStyle(fontSize: 20),
+                          ),
+                        ),
+                      ),
+                    ),
                   ]));
         }));
   }
