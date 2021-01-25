@@ -1,34 +1,41 @@
 {
   "project_info": {
-    "project_number": "584224639783",
-    "firebase_url": "https://covid-vaccine-app.firebaseio.com",
-    "project_id": "covid-vaccine-app",
-    "storage_bucket": "covid-vaccine-app.appspot.com"
+    "project_number": "1088974524069",
+    "project_id": "vax-india-tech-app",
+    "storage_bucket": "vax-india-tech-app.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:584224639783:android:41469943aa2c4f297c7702",
+        "mobilesdk_app_id": "1:1088974524069:android:9237b8e44eee7adcdc074c",
         "android_client_info": {
           "package_name": "com.covax.covidvaccineapp"
         }
       },
       "oauth_client": [
         {
-          "client_id": "584224639783-egvodk5k52cb1j45opgq8mmcu2pi1khi.apps.googleusercontent.com",
+          "client_id": "1088974524069-ilv01mkicica2r7gfu4irj1of8mahce0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.covax.covidvaccineapp",
+            "certificate_hash": "376d331b2914d6f9165ff8687991eb6453d71e31"
+          }
+        },
+        {
+          "client_id": "1088974524069-5ln8h7n9a3ab8s6vnimflthjfdio02g3.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCPb-HX4wCgJ5EBZGpqPWLFjkffkbBhvo4"
+          "current_key": "AIzaSyDdA9v8ZCi5qqBPZOlAEp2SSdGkdesOUiI"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "584224639783-egvodk5k52cb1j45opgq8mmcu2pi1khi.apps.googleusercontent.com",
+              "client_id": "1088974524069-5ln8h7n9a3ab8s6vnimflthjfdio02g3.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
